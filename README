@@ -7,7 +7,11 @@
 		3 different layouts
 
 
-@Compile:	To compile, type 
+@Compile:	To clean up directory:
+
+		make clean
+
+		To compile, type 
 
 		make 
 
@@ -16,7 +20,7 @@
 
 @How to use:	To use, type
 
-		./dictionary < FILENAME
+		./dic < FILENAME
 
 		inside program directory where filename is the name of the file you 
 		want to index in the dictionary. 

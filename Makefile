@@ -1,11 +1,11 @@
 CC = g++
-OBJ = dictionaryv2.o 
+OBJ = main.o dictionary.o 
 
-dictionaryv2: $(OBJ)
-	$(CC) $(OBJ) -g -o $@
+dic: $(OBJ)
+	$(CC) -std=c++11 $(OBJ) -o $@
 
-.c.o:
-	$(CC) -c $<
+.cpp.o:
+	$(CC) -std=c++11 -g -c $<
 
 clean:
-	rm *.o dictionaryv2
+	rm *.o dic
